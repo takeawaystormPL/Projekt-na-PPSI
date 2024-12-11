@@ -1,0 +1,366 @@
+:root{
+    --page-background:#202e3b;
+}
+*{
+    padding: 0;
+    margin: 0;
+   color: white;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+body{
+    background-color: var(--page-background);
+}
+nav {
+    transition: linear 0.2s;
+    display: flex;
+    background-color: var(--page-background);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    height: 15vh;
+    z-index: 2;
+    align-items: center;
+    
+}
+
+nav img {
+    width: 7.5vw;
+    height: 100%;
+}
+#subpage{
+    margin: 0 auto;
+}
+nav ul {
+    display: flex;
+    width: 50%;
+    font-size: 1.3em;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1; 
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: ease-out 0.3s;
+}
+nav ul li a:hover{
+    color: rgb(179, 176, 176);
+    cursor: pointer;
+}
+/*Wyskakujace menu*/
+nav div.more{
+    display: none;
+}
+nav .contact {
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav .contact a {
+    background-color: #c7c7c7;
+    border-radius: 1em;
+    padding: 1em;
+    color: #000000;
+    text-decoration: none;
+    transition: ease-out 0.3s;
+}
+nav .contact a:hover{
+    background-color: #e6e5e5;
+    scale: 1.05;
+}
+/*main*/
+.top-main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+main{
+    padding: 4em;
+}
+
+.top{
+    position: relative;
+    padding: 2em;
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.top a {
+    width: 15%;
+    padding: 2em;
+    margin: 1em;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: ease-out 0.3s;
+}
+.top a  h2{
+    text-align: center;
+}
+.top a  img{
+    padding-top: 1em;
+    width: 100%;
+    height: 10vw;
+    transition: ease-out 0.3s;
+}
+.top a img:hover{
+    scale: 1.05;
+}
+.top a:hover {
+    transform: scale(1.05); 
+}
+
+.top a:not(:hover) {
+    filter: grayscale(100%);
+}
+.top .item {
+    width: 15%;
+    padding: 2em;
+    margin: 1em;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: ease-out 0.3s;
+}
+.top .item  h2{
+    text-align: center;
+}
+.top .item img{
+    padding-top: 1em;
+    width: 100%;
+    height: 10vw;
+    transition: ease-out 0.3s;
+}
+.top .item img:hover{
+    scale: 1.05;
+}
+.top .item:hover {
+    transform: scale(1.05); 
+}
+
+.top .item :not(:hover) {
+    filter: grayscale(100%);
+}
+/*komentarze*/
+.comments{
+    width: 20vw;
+    padding: 1em;
+    
+    display: flex;
+}
+.comments form{
+   align-self: center;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+}
+.comments h1{
+    text-align: center;
+}
+.input{
+    width: 75%;
+    background-color: rgb(167, 165, 165);
+    padding: .7em 1em ;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    color: #202e3b;
+    border: 0.1em solid rgb(0, 0, 0);
+    align-self: center;
+    transition: ease-out 300ms;
+}
+.input::placeholder, #com::placeholder{
+    color: #202e3b;
+}
+  .input:focus {
+    outline: none;
+    scale: 1.05;
+}
+.input:hover{
+    scale: 1.05;
+    background-color: rgb(136, 135, 135);
+}
+#com:focus {
+    outline: none;
+    scale: 1.05;
+}
+#com:hover{
+    scale: 1.05;
+    background-color: rgb(136, 135, 135);
+}
+#com{
+    transition: ease-out 300ms;
+    width: 80%;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    border: 0.1em solid rgb(0, 0, 0);
+    background-color: rgb(167, 165, 165);
+    margin: 0 auto;
+    padding: .7em 1em ;
+    color: #202e3b;
+}
+#submit{
+    background-color: #c7c7c7;
+    margin: 1em;
+    color: black;
+    width: 30%;
+    align-self: center;
+    border: none;
+    padding: 0.6em 0.2em;
+    border-radius: 1.2em;
+    transition: ease-out 0.3s;
+}
+#submit:hover{
+    background-color: #e7e6e6;
+    scale: 1.05;
+    cursor: pointer;
+}
+/*poradniki*/
+.guides{
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+.guides h1{
+    font-size: 3em;
+    padding: 1em;
+}
+.guides a{
+    width: 50%;
+}
+.guide{
+    transition: ease-out 0.3s;
+    width: 100%;
+    margin: 0 auto;
+}
+.guide .data{
+    margin: 0 auto;
+    gap: 1em;
+    width: 100%;
+    display: flex;
+    border: 2px solid white;
+    padding: 1em;
+}
+.guide .data div.content p{
+    color: rgb(134, 131, 131);
+    text-decoration: none;
+    transition: ease-out 300ms;
+}
+
+.guide .data div.content p:hover{
+color: #c7c7c7;
+}
+.guide .data .content h2{
+    width: 100%;
+    transition: ease-out 300ms;
+}
+.guide .data .content h2:hover{
+    color: rgb(9, 189, 189);
+}
+.guide img{
+    width: 50%;
+}
+.guide:hover{
+    scale: 1.05;
+}
+/*komentarze*/
+.added-comments{
+    display: flex;
+    gap: 2em;
+    align-self: center;
+    padding: 2em;
+    width: auto;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+#komentarze{
+    margin: 0 auto;
+    margin:  2em 0;
+    text-align: center;
+}
+.comment{
+    border: 1px solid white;
+    border-radius: 1em;
+    padding: 1em;
+    width: auto;
+    
+}
+/*FOOTER*/
+footer{
+    background-color: #283846;
+    list-style-type: none;
+}
+footer .container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    position:  relative;
+    list-style-type: none;
+    padding: 1em;
+}
+
+footer div {
+   gap: 1em;
+    flex: 2;
+    height: auto;
+
+    list-style-type: none;
+}
+footer p{
+    margin-top: 10px;
+}
+footer a{
+    color: white;
+    transition: ease-out 0.3s;
+}
+footer a:hover{
+    color: rgb(179, 176, 176);
+}
+footer h3{
+    color: rgb(250, 250, 250);
+    font-weight: 900;
+    font-size: 1.4em;
+}
+/* guziki*/
+.hapla{
+    background-color: #c7c7c7;
+    display: flex;
+    margin-bottom: 5px;
+    color: black;
+    width: 5em;
+    align-self: center;
+    border: none;
+    padding: 0.6em 0.2em;
+    border-radius: 1.2em;
+    transition: ease-out 0.3s;
+}
+.hapla:hover{
+    background-color: #b3b3b3;
+    scale: 1.05;
+}
+/*kontakt*/
+.bingo{
+    display: none;
+}
+
+
