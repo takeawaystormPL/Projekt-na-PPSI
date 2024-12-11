@@ -41,14 +41,6 @@ contactButtons.forEach((button) => {
   });
 });
 
-//Menu wysuwane
-function menu() {
-  var menu = document.querySelector(".menu");
-  menu.classList.toggle("show");
-}
-let menus = document.querySelector(".more");
-menus.addEventListener("click", menu);
-
 // Funkcja tworząca komentarz
 function stworzKomentarz(name, email, com) {
   // Sprawdzenie czy wprowadzone dane są poprawne
